@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Margem automática (responsividade)*/
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #ff6f61, #d44d4d);
+    /*Cor de fundo gradiente no cabeçalho*/
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /*Sombreamento abaixo do background cabeçalho( 0=H,4px=V 8px=Desfoque)*/
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /*Sombreamento abaixo do background do navegador( 0=H,4px=V 8px=Desfoque)*/
+}
+
+nav ul li {
+    margin: 0 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+
+}
+
+nav ul li a i {
+    margin-right: 8px;
+    color: #d44d4d;
+}
+
+nav ul li a:hover {
+    color: #d44d4d;
+}
+
+/* Layout principal */
+.conteudo {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+
+.principal {
+    flex: 3;
+    /*Extende o tamanho do menu principal em relaçao ao aside*/
+}
+
+
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /*Sombreamento sendo ( H = 0, V = 4px e Desfoque = 8px)*/
+}
+
+.footer__top {
+    margin-bottom: 15px;
+}
+
+.footer__top a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+
+}
+
+.footer__top a i {
+    margin-right: 6px;
+    color: #d44d4d;
+}
+
+.footer__top a:hover {
+    color: #d44d4d;
+}
+
+
+
+/*-----------------------------------------------------Tabela de produtos--------------------------------------------------- */
+.tabela__produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 65px auto;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    background: #ff5722;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+table td {
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background: #fff3e0;
+}
+
+/* Última linha sem borda */
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* -------------------------------------------------- Formulário de Cadastro --------------------------------------------- */
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Inputs e textarea */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid #ff5722;
+    outline: none;
+}
+
+/* Textarea */
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Botão */
+form button {
+    background: #ff5722;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+form button:hover {
+    background: #e64a19;
+}
+
+/* estilo base para todos botões */
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 2px;
+    transition: background 0.3s ease;
+}
+
+/* botão de editar */
+.btn-editar {
+    background-color: #3498db;
+    color: white;
+}
+.btn-editar:hover {
+    background-color: #2980b9;
+}
+
+/* botão de remover */
+.btn-remover {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn-remover:hover {
+    background-color: #c0392b;
+}

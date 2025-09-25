@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Supermercado Good Price -  Cadastro de Produtos</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-home"></i> Início</a></li>
+                <li><a href=""><i class="fas fa-boxes"></i> Catálogo</a></li>
+                <li><a href=""><i class="fas fa-tags"></i> Preços</a></li>
+                <li><a href="cadastro.html"><i class="fas fa-user-plus"></i> Cadastro</a></li>
+            </ul>
+        </nav>
+
+        <div class="conteudo">
+            <!-- Formulário -->
+            <aside>
+                <div class="formulario">
+                    <form id="formProduto">
+
+                        <label for="codigo">Código:</label>
+                        <input type="number" id="codigo" name="codigo" required>
+
+                        <label for="produto">Produto:</label>
+                        <input type="text" id="produto" name="produto" required>
+
+                        <label for="preco">Preço:</label>
+                        <input type="number" id="preco" name="preco" step="0.01" min="0" required>
+
+                        <label for="quantidade">Qde:</label>
+                        <input type="number" id="quantidade" name="quantidade" min="0" required>
+
+                        <label for="descricao">Descrição:</label>
+                        <textarea name="descricao" id="descricao" rows="4"></textarea>
+
+                        <button type="submit"></i> Listar</button>
+                    </form>
+                </div>
+            </aside>
+
+            <main class="principal">
+                <!-- Tabela -->
+                <div class="tabela__produto">
+                    
+                    <table id="tabelaProdutos" border="1" cellpadding="5">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Descrição</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Produtos aparecerão aqui -->
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <section class="footer__top">
+                <a href=""><i class="fas fa-envelope"></i> Fale conosco</a>
+                <a href=""><i class="fas fa-users"></i> Nossa Equipe</a>
+                <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+                <a href=""><i class="fas fa-briefcase"></i> Trabalhe conosco</a>
+            </section>
+            <section>
+                <p>&copy; 2025 Supermercado Goodprice</p>
+            </section>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
